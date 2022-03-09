@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="VictorianMoneyTracker2.MainPage">
+
+    <StackLayout Orientation="Vertical" 
+                 VerticalOptions="CenterAndExpand">
+
+        <Label FontSize="30" 
+               HorizontalOptions="CenterAndExpand">Total Worth
+        </Label>
+
+        <StackLayout Orientation="Horizontal" >
+
+            <Button x:Name="MinuesPound" 
+                    Text="-" FontSize="24" 
+                    HorizontalOptions="Start" 
+                    WidthRequest="50" 
+                    Clicked="MinuesPound_Clicked"
+            />
+
+            <ImageButton x:Name="poundDown" 
+                         Source="downArrowEnabled.png" 
+                         WidthRequest="50" 
+                         Clicked="poundDown_Clicked"
+            />
+
+            <StackLayout Orientation="Vertical" 
+                         VerticalOptions="CenterAndExpand" 
+                         HorizontalOptions="CenterAndExpand" 
+                         Margin="0,0,50,0">
+
+                <Label x:Name="poundNum" 
+                       Text= "0" FontSize="20" 
+                       HorizontalOptions="CenterAndExpand" 
+                />
+
+                <Label x:Name="pounds" 
+                       Text="pounds" 
+                       FontSize="20" 
+                       HorizontalOptions="CenterAndExpand" 
+                />
+
+            </StackLayout>
+
+            <Button x:Name="PlusPound" 
+                    Text="+" FontSize="24" 
+                    WidthRequest="50" 
+                    Clicked="PlusPound_Clicked"
+            />
+
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" >
+
+            <Button x:Name="MinuesCrown"  
+                    Text="-" 
+                    FontSize="24"
+                    WidthRequest="50" 
+                    Clicked="MinuesCrown_Clicked"
+            />
+
+            <ImageButton x:Name="crownDown" 
+                         Source="downArrowEnabled.png" 
+                         WidthRequest="50" 
+                         Clicked="crownDown_Clicked"
+            />
+
+            <StackLayout Orientation="Vertical" 
+                         VerticalOptions="CenterAndExpand" 
+                         HorizontalOptions="CenterAndExpand">
+
+                <Label x:Name="crownNum" 
+                       Text="0" FontSize="20" 
+                       HorizontalOptions="CenterAndExpand"
+                />
+
+                <Label x:Name="crowns" 
+                       Text="crowns" 
+                       FontSize="20" 
+                />
+
+            </StackLayout>
+
+            <ImageButton x:Name="crownUp" 
+                         Source="upArrowEnabled.png" 
+                         WidthRequest="50" 
+                         Clicked="crownUp_Clicked"
+            />
+
+            <Button x:Name="PlusCrown" 
+                    Text="+" FontSize="24" 
+                    WidthRequest="50" 
+                    Clicked="PlusCrown_Clicked"
+            />
+
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" >
+
+            <Button x:Name="MinuesShilling" 
+                    Text="-" 
+                    FontSize="24" 
+                    WidthRequest="50" 
+                    Clicked="MinuesShilling_Clicked"
+            />
+
+            <ImageButton x:Name="shillDown" 
+                         Source="downArrowEnabled.png" 
+                         WidthRequest="50" 
+                         Clicked="shillDown_Clicked"
+            />
+
+            <StackLayout Orientation="Vertical" 
+                         VerticalOptions="CenterAndExpand" 
+                         HorizontalOptions="CenterAndExpand">
+
+                <Label x:Name="shillNum" 
+                       Text="0" FontSize="20" 
+                       HorizontalOptions="CenterAndExpand"
+                />
+
+                <Label x:Name="shilling" 
+                       Text="shilling" 
+                       FontSize="20" 
+                />
+
+            </StackLayout>
+            <ImageButton x:Name="shillUp" 
+                         Source="upArrowEnabled.png" 
+                         WidthRequest="50" 
+                         Clicked="shillUp_Clicked"
+            />
+
+            <Button x:Name="PlusShilling" 
+                    Text="+" FontSize="24" 
+                    WidthRequest="50" 
+                    Clicked="PlusShilling_Clicked"
+            />
+
+        </StackLayout>
+
+
+        <StackLayout Orientation="Horizontal" >
+
+            <Button x:Name="MinuesPence" 
+                    Text="-" FontSize="24" 
+                    WidthRequest="50" 
+                    Clicked="MinuesPence_Clicked"
+            />
+
+            <ImageButton x:Name="penceDown" 
+                         Source="downArrowEnabled.png" 
+                         WidthRequest="50" 
+                         Clicked="penceDown_Clicked"
+            />
+
+            <StackLayout Orientation="Vertical" 
+                         VerticalOptions="CenterAndExpand" 
+                         HorizontalOptions="CenterAndExpand">
+
+                <Label x:Name="penceNum" 
+                       Text="0" FontSize="20" 
+                       HorizontalOptions="CenterAndExpand"
+                />
+
+                <Label x:Name="pence" 
+                       Text="pence" 
+                       FontSize="20" 
+                />
+
+            </StackLayout>
+            <ImageButton x:Name="penceUp" 
+                         Source="upArrowEnabled.png" 
+                         WidthRequest="50" 
+                         Clicked="penceUp_Clicked"
+            />
+
+            <Button x:Name="PlusPence" 
+                    Text="+" FontSize="24"
+                    WidthRequest="50" 
+                    Clicked="PlusPence_Clicked"
+            />
+
+        </StackLayout>
+
+
+        <StackLayout Orientation="Horizontal" >
+
+            <Button x:Name="MinuesFarth" 
+                    Text="-" FontSize="24" 
+                    WidthRequest="50" 
+                    HorizontalOptions="Start" 
+                    Clicked="MinuesFarth_Clicked"
+            />
+
+            <StackLayout Orientation="Vertical" 
+                         VerticalOptions="CenterAndExpand" 
+                         HorizontalOptions="CenterAndExpand" 
+                         Margin="50,0,0,0">
+
+                <Label x:Name="farthNum" 
+                       Text="0" FontSize="20" 
+                       HorizontalOptions="CenterAndExpand"
+                />
+
+                <Label x:Name="farthing" 
+                       Text="farthing" 
+                       FontSize="20" 
+                />
+
+            </StackLayout>
+
+            <ImageButton x:Name="farthUp" 
+                         Source="upArrowEnabled.png" 
+                         WidthRequest="50" 
+                         Clicked="farthUp_Clicked"
+            />
+            <Button x:Name="PlusFarthing" 
+                    Text="+" FontSize="24" 
+                    WidthRequest="50" 
+                    Clicked="PlusFarthingBottonClick"
+            />
+
+        </StackLayout>
+
+
+
+
+
+
+
+    </StackLayout>
+
+</ContentPage>
